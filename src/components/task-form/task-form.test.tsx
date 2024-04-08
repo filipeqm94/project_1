@@ -34,6 +34,7 @@ describe('Task Form component', () => {
     fireEvent.click(buttonElement);
 
     expect(consoleSpy).toHaveBeenCalledWith('handle delete', task);
+
     consoleSpy.mockRestore();
   });
 });
