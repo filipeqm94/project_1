@@ -33,6 +33,6 @@ describe('Task Form component', () => {
     const buttonElement = screen.getByRole('button', { name: 'Delete Task' });
     fireEvent.click(buttonElement);
 
-    expect(consoleSpy).toHaveBeenCalledWith('handle submit', task);
+    expect(consoleSpy).toHaveBeenCalledWith('handle delete', task);
   });
 });

@@ -20,7 +20,7 @@ export default function TaskForm() {
   function handleDelete(task: string) {
     const deleteTask = taskList.filter((item) => item !== task);
     setTaskList(deleteTask);
-    console.log('handle submit', task);
+    console.log('handle delete', task);
   }
 
   return (
